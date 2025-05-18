@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hundir la Flota</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Hundir la Flota</h1>
+
+  <h2>Tu Tablero</h2>
+  <div id="jugador" class="tablero"></div>
+
+  <h2>Tablero Enemigo</h2>
+  <div id="ia" class="tablero"></div>
+
+  <h3>Coloca tus barcos</h3>
+  <div>
+    <button onclick="seleccionarBarco('Portaaviones', 5)">Portaaviones (5)</button>
+    <button onclick="seleccionarBarco('Acorazado', 4)">Acorazado (4)</button>
+    <button onclick="seleccionarBarco('Crucero', 3)">Crucero (3)</button>
+    <button onclick="seleccionarBarco('Submarino', 3)">Submarino (3)</button>
+    <button onclick="seleccionarBarco('Destructor', 2)">Destructor (2)</button>
+    <button onclick="cambiarOrientacion()">Cambiar Orientación</button>
+  </div>
+
+  <button id="btnJugar" onclick="iniciarJuego()" disabled>¡Jugar!</button>
+
+  <h3>Disparar</h3>
+  <form id="disparoForm" style="display:none;">
+    X: <input type="number" id="x" min="0" max="9" required>
+    Y: <input type="number" id="y" min="0" max="9" required>
+    <button type="submit">Disparar</button>
+  </form>
+
+  <p id="mensaje"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>

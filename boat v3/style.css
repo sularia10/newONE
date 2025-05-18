@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(10, 30px);
+  gap: 2px;
+  margin: 10px;
+}
+.casilla {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #4888fd;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.barco {
+  background-color: #f7be6a;
+  color: white;
+}
+
+.agua {
+  background-color: #00f;
+}
+
+.tocado {
+  background-color: red;
+}
+
+.hundido {
+  background-color: black;
+  color: white;
+}
+
+.impactoIA {
+  background-color: yellow;
+}
